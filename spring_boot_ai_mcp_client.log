@@ -1,0 +1,1087 @@
+2026-02-03T08:13:45.188-07:00  INFO 12254 --- [spring_boot_ai_mcp_client] [main] .c.SpringBootAiMcpClientApplicationTests : Starting SpringBootAiMcpClientApplicationTests using Java 21.0.8 with PID 12254 (started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T08:13:45.189-07:00  INFO 12254 --- [spring_boot_ai_mcp_client] [main] .c.SpringBootAiMcpClientApplicationTests : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T08:13:45.581-07:00 ERROR 12254 --- [spring_boot_ai_mcp_client] [main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-03T08:13:45.630-07:00 DEBUG 12254 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T08:13:45.638-07:00  WARN 12254 --- [spring_boot_ai_mcp_client] [main] c.r.GenericReactiveWebApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'mcpClientChatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-03T08:13:45.644-07:00  INFO 12254 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-03T08:13:45.649-07:00 ERROR 12254 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method chatClient in com.naga.mcp.client.configuration.McpClientChatConfig required a bean of type 'io.modelcontextprotocol.client.McpSyncClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.modelcontextprotocol.client.McpSyncClient' in your configuration.
+
+2026-02-03T08:13:45.650-07:00  WARN 12254 --- [spring_boot_ai_mcp_client] [main] o.s.test.context.TestContextManager      : Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener] to prepare test instance [com.naga.mcp.client.SpringBootAiMcpClientApplicationTests@3af36922]
+
+java.lang.IllegalStateException: Failed to load ApplicationContext for [ReactiveWebMergedContextConfiguration@629b780f testClass = com.naga.mcp.client.SpringBootAiMcpClientApplicationTests, locations = [], classes = [com.naga.mcp.client.SpringBootAiMcpClientApplication], contextInitializerClasses = [], activeProfiles = [], propertySourceDescriptors = [], propertySourceProperties = ["org.springframework.boot.test.context.SpringBootTestContextBootstrapper=true"], contextCustomizers = [org.springframework.boot.web.server.context.SpringBootTestRandomPortContextCustomizer@42a9e5d1, org.springframework.boot.test.context.PropertyMappingContextCustomizer@0, org.springframework.boot.test.context.filter.ExcludeFilterContextCustomizer@6731787b, org.springframework.boot.test.http.client.DisableReactorResourceFactoryGlobalResourcesContextCustomizerFactory$DisableReactorResourceFactoryGlobalResourcesContextCustomizerCustomizer@419a20a6, org.springframework.boot.test.json.DuplicateJsonObjectContextCustomizerFactory$DuplicateJsonObjectContextCustomizer@10fde30a, org.springframework.boot.test.autoconfigure.OnFailureConditionReportContextCustomizerFactory$OnFailureConditionReportContextCustomizer@346939bf, org.springframework.test.context.support.DynamicPropertiesContextCustomizer@0, org.springframework.boot.test.context.SpringBootTestAnnotation@f2976460], contextLoader = org.springframework.boot.test.context.SpringBootContextLoader, parent = null]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.lambda$loadContext$0(DefaultCacheAwareContextLoaderDelegate.java:195) ~[spring-test-7.0.3.jar:7.0.3]
+	at org.springframework.test.context.cache.DefaultContextCache.put(DefaultContextCache.java:214) ~[spring-test-7.0.3.jar:7.0.3]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:160) ~[spring-test-7.0.3.jar:7.0.3]
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:128) ~[spring-test-7.0.3.jar:7.0.3]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:155) ~[spring-test-7.0.3.jar:7.0.3]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:111) ~[spring-test-7.0.3.jar:7.0.3]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:260) ~[spring-test-7.0.3.jar:7.0.3]
+	at org.springframework.test.context.junit.jupiter.SpringExtension.postProcessTestInstance(SpringExtension.java:205) ~[spring-test-7.0.3.jar:7.0.3]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$1(ClassBasedTestDescriptor.java:423) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.executeAndMaskThrowable(ClassBasedTestDescriptor.java:428) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$invokeTestInstancePostProcessors$0(ClassBasedTestDescriptor.java:422) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.accept(ForEachOps.java:184) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197) ~[na:na]
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(ArrayList.java:1708) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(ForEachOps.java:151) ~[na:na]
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(ForEachOps.java:174) ~[na:na]
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234) ~[na:na]
+	at java.base/java.util.stream.ReferencePipeline.forEach(ReferencePipeline.java:596) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.invokeTestInstancePostProcessors(ClassBasedTestDescriptor.java:422) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$instantiateAndPostProcessTestInstance$0(ClassBasedTestDescriptor.java:334) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.instantiateAndPostProcessTestInstance(ClassBasedTestDescriptor.java:333) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$1(ClassBasedTestDescriptor.java:322) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at java.base/java.util.Optional.orElseGet(Optional.java:364) ~[na:na]
+	at org.junit.jupiter.engine.descriptor.ClassBasedTestDescriptor.lambda$testInstancesProvider$0(ClassBasedTestDescriptor.java:321) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.execution.TestInstancesProvider.getTestInstances(TestInstancesProvider.java:27) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$prepare$0(TestMethodTestDescriptor.java:127) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:126) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.prepare(TestMethodTestDescriptor.java:70) ~[junit-jupiter-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$prepare$0(NodeTestTask.java:144) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.prepare(NodeTestTask.java:144) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:110) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596) ~[na:na]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:42) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$2(NodeTestTask.java:180) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$1(NodeTestTask.java:166) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:138) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$0(NodeTestTask.java:164) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:74) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:163) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:116) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:36) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:52) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:58) ~[junit-platform-engine-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.executeEngine(EngineExecutionOrchestrator.java:246) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.failOrExecuteEngine(EngineExecutionOrchestrator.java:218) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:179) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:108) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:66) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:157) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:65) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:125) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:114) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:58) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.lambda$execute$2(InterceptingLauncher.java:57) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.ClasspathAlignmentCheckingLauncherInterceptor.intercept(ClasspathAlignmentCheckingLauncherInterceptor.java:25) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.InterceptingLauncher.execute(InterceptingLauncher.java:56) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:58) ~[junit-platform-launcher-6.0.2.jar:6.0.2]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.apache.maven.surefire.api.util.ReflectionUtils.invokeMethodWithArray(ReflectionUtils.java:125) ~[surefire-api-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.executeWithCancellationToken(LauncherAdapter.java:68) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.LauncherAdapter.execute(LauncherAdapter.java:54) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.execute(JUnitPlatformProvider.java:203) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invokeAllTests(JUnitPlatformProvider.java:168) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.junitplatform.JUnitPlatformProvider.invoke(JUnitPlatformProvider.java:136) ~[surefire-junit-platform-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507) ~[surefire-booter-3.5.4.jar:3.5.4]
+	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495) ~[surefire-booter-3.5.4.jar:3.5.4]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'mcpClientChatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:766) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:747) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1446) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:993) ~[spring-context-7.0.3.jar:7.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620) ~[spring-context-7.0.3.jar:7.0.3]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.2.jar:4.0.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.2.jar:4.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.2.jar:4.0.2]
+	at org.springframework.boot.test.context.SpringBootContextLoader.lambda$loadContext$2(SpringBootContextLoader.java:156) ~[spring-boot-test-4.0.2.jar:4.0.2]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:58) ~[spring-core-7.0.3.jar:7.0.3]
+	at org.springframework.util.function.ThrowingSupplier.get(ThrowingSupplier.java:46) ~[spring-core-7.0.3.jar:7.0.3]
+	at org.springframework.boot.SpringApplication.withHook(SpringApplication.java:1465) ~[spring-boot-4.0.2.jar:4.0.2]
+	at org.springframework.boot.test.context.SpringBootContextLoader$ContextLoaderHook.run(SpringBootContextLoader.java:605) ~[spring-boot-test-4.0.2.jar:4.0.2]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:156) ~[spring-boot-test-4.0.2.jar:4.0.2]
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:115) ~[spring-boot-test-4.0.2.jar:4.0.2]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:247) ~[spring-test-7.0.3.jar:7.0.3]
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.lambda$loadContext$0(DefaultCacheAwareContextLoaderDelegate.java:167) ~[spring-test-7.0.3.jar:7.0.3]
+	... 86 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1382) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:763) ~[spring-beans-7.0.3.jar:7.0.3]
+	... 113 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1362) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.3.jar:7.0.3]
+	... 126 common frames omitted
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:2297) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1725) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.3.jar:7.0.3]
+	... 140 common frames omitted
+
+2026-02-03T08:14:27.155-07:00  INFO 12297 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 12297 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T08:14:27.157-07:00  INFO 12297 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T08:14:27.506-07:00 ERROR 12297 --- [spring_boot_ai_mcp_client] [main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-03T08:14:27.549-07:00 DEBUG 12297 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T08:14:27.557-07:00  WARN 12297 --- [spring_boot_ai_mcp_client] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'mcpClientChatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-03T08:14:27.559-07:00  INFO 12297 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-03T08:14:27.563-07:00 ERROR 12297 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method chatClient in com.naga.mcp.client.configuration.McpClientChatConfig required a bean of type 'io.modelcontextprotocol.client.McpSyncClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.modelcontextprotocol.client.McpSyncClient' in your configuration.
+
+2026-02-03T08:59:22.077-07:00  INFO 12809 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 12809 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T08:59:22.078-07:00  INFO 12809 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T08:59:22.434-07:00 ERROR 12809 --- [spring_boot_ai_mcp_client] [main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-03T08:59:22.472-07:00 DEBUG 12809 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T08:59:22.479-07:00  WARN 12809 --- [spring_boot_ai_mcp_client] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'mcpClientChatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-03T08:59:22.481-07:00  INFO 12809 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-03T08:59:22.486-07:00 ERROR 12809 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method chatClient in com.naga.mcp.client.configuration.McpClientChatConfig required a bean of type 'io.modelcontextprotocol.client.McpClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.modelcontextprotocol.client.McpClient' in your configuration.
+
+2026-02-03T09:06:35.083-07:00  INFO 13021 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 13021 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T09:06:35.085-07:00  INFO 13021 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T09:06:35.439-07:00 ERROR 13021 --- [spring_boot_ai_mcp_client] [main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-03T09:06:35.482-07:00 DEBUG 13021 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T09:06:35.489-07:00  WARN 13021 --- [spring_boot_ai_mcp_client] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'mcpClientChatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-03T09:06:35.491-07:00  INFO 13021 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-03T09:06:35.496-07:00 ERROR 13021 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method chatClient in com.naga.mcp.client.configuration.McpClientChatConfig required a bean of type 'io.modelcontextprotocol.client.McpClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.modelcontextprotocol.client.McpClient' in your configuration.
+
+2026-02-03T09:16:30.750-07:00  INFO 13274 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 13274 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T09:16:30.752-07:00  INFO 13274 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T09:16:31.107-07:00 ERROR 13274 --- [spring_boot_ai_mcp_client] [main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-03T09:16:31.149-07:00 DEBUG 13274 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T09:16:31.157-07:00  WARN 13274 --- [spring_boot_ai_mcp_client] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'mcpClientChatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-03T09:16:31.159-07:00  INFO 13274 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-03T09:16:31.164-07:00 ERROR 13274 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method chatClient in com.naga.mcp.client.configuration.McpClientChatConfig required a bean of type 'io.modelcontextprotocol.client.McpSyncClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.modelcontextprotocol.client.McpSyncClient' in your configuration.
+
+2026-02-03T09:23:51.936-07:00  INFO 13380 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 13380 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T09:23:51.937-07:00  INFO 13380 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T09:23:52.341-07:00 ERROR 13380 --- [spring_boot_ai_mcp_client] [main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-03T09:23:52.387-07:00 DEBUG 13380 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T09:23:52.396-07:00  WARN 13380 --- [spring_boot_ai_mcp_client] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'mcpClientChatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-03T09:23:52.398-07:00  INFO 13380 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-03T09:23:52.404-07:00 ERROR 13380 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method chatClient in com.naga.mcp.client.configuration.McpClientChatConfig required a bean of type 'io.modelcontextprotocol.client.McpSyncClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.modelcontextprotocol.client.McpSyncClient' in your configuration.
+
+2026-02-03T09:25:16.987-07:00  INFO 13551 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 13551 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T09:25:16.989-07:00  INFO 13551 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T09:25:17.384-07:00 ERROR 13551 --- [spring_boot_ai_mcp_client] [main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-03T09:25:17.430-07:00 DEBUG 13551 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T09:25:17.438-07:00  WARN 13551 --- [spring_boot_ai_mcp_client] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'mcpClientChatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-03T09:25:17.440-07:00  INFO 13551 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-03T09:25:17.446-07:00 ERROR 13551 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method chatClient in com.naga.mcp.client.configuration.McpClientChatConfig required a bean of type 'io.modelcontextprotocol.client.McpClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.modelcontextprotocol.client.McpClient' in your configuration.
+
+2026-02-03T09:26:23.700-07:00  INFO 13573 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 13573 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T09:26:23.701-07:00  INFO 13573 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T09:26:24.094-07:00 ERROR 13573 --- [spring_boot_ai_mcp_client] [main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-03T09:26:24.140-07:00 DEBUG 13573 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T09:26:24.148-07:00  WARN 13573 --- [spring_boot_ai_mcp_client] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'mcpClientChatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-03T09:26:24.150-07:00  INFO 13573 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-03T09:26:24.155-07:00 ERROR 13573 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method chatClient in com.naga.mcp.client.configuration.McpClientChatConfig required a bean of type 'io.modelcontextprotocol.client.McpSyncClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.modelcontextprotocol.client.McpSyncClient' in your configuration.
+
+2026-02-03T09:34:23.698-07:00  INFO 13753 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 13753 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T09:34:23.699-07:00  INFO 13753 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T09:34:24.047-07:00 ERROR 13753 --- [spring_boot_ai_mcp_client] [main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-03T09:34:24.086-07:00 DEBUG 13753 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T09:34:24.093-07:00  WARN 13753 --- [spring_boot_ai_mcp_client] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'mcpClientChatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-03T09:34:24.095-07:00  INFO 13753 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-03T09:34:24.099-07:00 ERROR 13753 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method chatClient in com.naga.mcp.client.configuration.McpClientChatConfig required a bean of type 'io.modelcontextprotocol.client.McpSyncClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.modelcontextprotocol.client.McpSyncClient' in your configuration.
+
+2026-02-03T09:35:13.534-07:00  INFO 13877 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 13877 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T09:35:13.535-07:00  INFO 13877 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T09:35:13.536-07:00 DEBUG 13877 --- [spring_boot_ai_mcp_client] [main] o.s.boot.SpringApplication               : Loading source class com.naga.mcp.client.SpringBootAiMcpClientApplication
+2026-02-03T09:35:13.552-07:00 DEBUG 13877 --- [spring_boot_ai_mcp_client] [main] onfigReactiveWebServerApplicationContext : Refreshing org.springframework.boot.web.server.reactive.context.AnnotationConfigReactiveWebServerApplicationContext@2a62b5bc
+2026-02-03T09:35:13.897-07:00 DEBUG 13877 --- [spring_boot_ai_mcp_client] [main] o.s.b.a.AutoConfigurationPackages        : @EnableAutoConfiguration was declared on a class in the package 'com.naga.mcp.client'. Automatic @Repository and @Entity scanning is enabled.
+2026-02-03T09:35:13.935-07:00 ERROR 13877 --- [spring_boot_ai_mcp_client] [main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-03T09:35:13.980-07:00 DEBUG 13877 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T09:35:13.987-07:00  WARN 13877 --- [spring_boot_ai_mcp_client] [main] onfigReactiveWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'mcpClientChatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'chatClient' defined in class path resource [com/naga/mcp/client/configuration/McpClientChatConfig.class]: Unsatisfied dependency expressed through method 'chatClient' parameter 1: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-03T09:35:13.991-07:00 DEBUG 13877 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+
+============================
+CONDITIONS EVALUATION REPORT
+============================
+
+
+Positive matches:
+-----------------
+
+   AopAutoConfiguration matched:
+      - @ConditionalOnBooleanProperty (spring.aop.auto=true) matched (OnPropertyCondition)
+
+   AopAutoConfiguration.ClassProxyingConfiguration matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'org.aspectj.weaver.Advice' (OnClassCondition)
+      - @ConditionalOnBooleanProperty (spring.aop.proxy-target-class=true) matched (OnPropertyCondition)
+
+   ApplicationAvailabilityAutoConfiguration#applicationAvailability matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.availability.ApplicationAvailability; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ChatClientAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.chat.client.ChatClient' (OnClassCondition)
+      - @ConditionalOnProperty (spring.ai.chat.client.enabled=true) matched (OnPropertyCondition)
+
+   ChatClientAutoConfiguration#chatClientBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.chat.client.ChatClient$Builder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ChatClientAutoConfiguration#chatClientBuilderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.model.chat.client.autoconfigure.ChatClientBuilderConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ChatClientAutoConfiguration.TracerNotPresentObservationConfiguration matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'io.micrometer.tracing.Tracer' (OnClassCondition)
+
+   ChatMemoryAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.ai.chat.memory.ChatMemory', 'org.springframework.ai.chat.memory.ChatMemoryRepository' (OnClassCondition)
+
+   ChatMemoryAutoConfiguration#chatMemory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.chat.memory.ChatMemory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ChatMemoryAutoConfiguration#chatMemoryRepository matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.chat.memory.ChatMemoryRepository; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ChatObservationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.chat.model.ChatModel' (OnClassCondition)
+
+   ChatObservationAutoConfiguration.TracerNotPresentObservationConfiguration matched:
+      - @ConditionalOnMissingClass did not find unwanted class 'io.micrometer.tracing.Tracer' (OnClassCondition)
+
+   CodecsAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.http.codec.CodecConfigurer', 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   CodecsAutoConfiguration.JacksonJsonCodecConfiguration matched:
+      - @ConditionalOnClass found required class 'tools.jackson.databind.json.JsonMapper' (OnClassCondition)
+      - @ConditionalOnProperty (spring.http.codecs.preferred-json-mapper=jackson) matched (OnPropertyCondition)
+
+   CodecsAutoConfiguration.JacksonJsonCodecConfiguration#jacksonCodecCustomizer matched:
+      - @ConditionalOnBean (types: tools.jackson.databind.json.JsonMapper; SearchStrategy: all) found bean 'jacksonJsonMapper' (OnBeanCondition)
+
+   EmbeddingObservationAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.embedding.EmbeddingModel' (OnClassCondition)
+
+   ErrorWebFluxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+      - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+
+   ErrorWebFluxAutoConfiguration#errorAttributes matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.webflux.error.ErrorAttributes; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ErrorWebFluxAutoConfiguration#errorWebExceptionHandler matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.webflux.error.ErrorWebExceptionHandler; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   HttpClientAutoConfiguration#httpClientSettings matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.http.client.HttpClientSettings; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   HttpHandlerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.web.reactive.DispatcherHandler', 'org.springframework.http.server.reactive.HttpHandler' (OnClassCondition)
+      - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.http.server.reactive.HttpHandler; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'tools.jackson.databind.json.JsonMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration#jacksonJsonMapper matched:
+      - @ConditionalOnMissingBean (types: tools.jackson.databind.json.JsonMapper; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration#jsonMapperBuilder matched:
+      - @ConditionalOnMissingBean (types: tools.jackson.databind.json.JsonMapper$Builder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   JacksonAutoConfiguration.JsonProblemDetailsConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.ProblemDetail' (OnClassCondition)
+
+   LifecycleAutoConfiguration#defaultLifecycleProcessor matched:
+      - @ConditionalOnMissingBean (names: lifecycleProcessor; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   McpClientAnnotationScannerAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springaicommunity.mcp.annotation.McpLogging' (OnClassCondition)
+      - @ConditionalOnProperty (spring.ai.mcp.client.annotation-scanner.enabled=true) matched (OnPropertyCondition)
+
+   McpClientAnnotationScannerAutoConfiguration#clientMcpSyncHandlersRegistry matched:
+      - @ConditionalOnProperty (spring.ai.mcp.client.type=SYNC) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.ai.mcp.annotation.spring.ClientMcpSyncHandlersRegistry; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   McpClientAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.modelcontextprotocol.spec.McpSchema' (OnClassCondition)
+      - @ConditionalOnProperty (spring.ai.mcp.client.enabled=true) matched (OnPropertyCondition)
+
+   McpClientAutoConfiguration#makeSyncClientsClosable matched:
+      - @ConditionalOnProperty (spring.ai.mcp.client.type=SYNC) matched (OnPropertyCondition)
+
+   McpClientAutoConfiguration#mcpSyncClientConfigurer matched:
+      - @ConditionalOnProperty (spring.ai.mcp.client.type=SYNC) matched (OnPropertyCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.ai.mcp.client.common.autoconfigure.configurer.McpSyncClientConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   McpClientAutoConfiguration#mcpSyncClients matched:
+      - @ConditionalOnProperty (spring.ai.mcp.client.type=SYNC) matched (OnPropertyCondition)
+
+   McpClientAutoConfiguration#mcpSyncToolChangeEventEmmiter matched:
+      - @ConditionalOnProperty (spring.ai.mcp.client.type=SYNC) matched (OnPropertyCondition)
+
+   McpToolCallbackAutoConfiguration matched:
+      - AllNestedConditions 2 matched 0 did not; NestedCondition on McpToolCallbackAutoConfiguration.McpToolCallbackAutoConfigurationCondition.ToolCallbackProviderEnabled @ConditionalOnProperty (spring.ai.mcp.client.toolcallback.enabled=true) matched; NestedCondition on McpToolCallbackAutoConfiguration.McpToolCallbackAutoConfigurationCondition.McpAutoConfigEnabled @ConditionalOnProperty (spring.ai.mcp.client.enabled=true) matched (McpToolCallbackAutoConfiguration.McpToolCallbackAutoConfigurationCondition)
+
+   McpToolCallbackAutoConfiguration#defaultMcpToolNamePrefixGenerator matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.mcp.McpToolNamePrefixGenerator; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   McpToolCallbackAutoConfiguration#mcpToolCallbacks matched:
+      - @ConditionalOnProperty (spring.ai.mcp.client.type=SYNC) matched (OnPropertyCondition)
+
+   NettyAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.netty.util.NettyRuntime' (OnClassCondition)
+
+   NettyReactiveWebServerAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.http.ReactiveHttpInputMessage', 'reactor.netty.http.server.HttpServer' (OnClassCondition)
+
+   NettyReactiveWebServerAutoConfiguration#nettyReactiveWebServerFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.web.server.reactive.ReactiveWebServerFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OllamaApiAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.ollama.api.OllamaApi' (OnClassCondition)
+
+   OllamaApiAutoConfiguration#ollamaApi matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.ollama.api.OllamaApi; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OllamaApiAutoConfiguration#ollamaConnectionDetails matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.model.ollama.autoconfigure.OllamaConnectionDetails; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OllamaChatAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.ollama.OllamaChatModel' (OnClassCondition)
+      - @ConditionalOnProperty (spring.ai.model.chat=ollama) matched (OnPropertyCondition)
+
+   OllamaChatAutoConfiguration#ollamaChatModel matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.ollama.OllamaChatModel; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   OllamaEmbeddingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.ollama.OllamaEmbeddingModel' (OnClassCondition)
+      - @ConditionalOnProperty (spring.ai.model.embedding=ollama) matched (OnPropertyCondition)
+
+   OllamaEmbeddingAutoConfiguration#ollamaEmbeddingModel matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.ollama.OllamaEmbeddingModel; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   PropertyPlaceholderAutoConfiguration#propertySourcesPlaceholderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.context.support.PropertySourcesPlaceholderConfigurer; SearchStrategy: current) did not find any beans (OnBeanCondition)
+
+   ReactiveHttpClientAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.http.client.reactive.ClientHttpConnector', 'reactor.core.publisher.Mono' (OnClassCondition)
+      - Detected ClientHttpConnectorBuilder (ConditionalOnClientHttpConnectorBuilderDetection)
+
+   ReactiveHttpClientAutoConfiguration#clientHttpConnector matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.client.reactive.ClientHttpConnector; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ReactiveHttpClientAutoConfiguration#clientHttpConnectorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.http.client.reactive.ClientHttpConnectorBuilder<?>; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ReactiveHttpClientAutoConfiguration.ReactorNetty matched:
+      - @ConditionalOnClass found required classes 'reactor.netty.http.client.HttpClient', 'org.springframework.boot.reactor.netty.autoconfigure.ReactorNettyConfigurations' (OnClassCondition)
+
+   ReactiveMultipartAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.http.codec.multipart.DefaultPartHttpMessageReader', 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+      - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+
+   ReactorAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'reactor.core.publisher.Hooks' (OnClassCondition)
+
+   ReactorNettyConfigurations.ReactorResourceFactoryConfiguration#reactorResourceFactory matched:
+      - @ConditionalOnMissingBean (types: org.springframework.http.client.ReactorResourceFactory; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestClientAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.client.RestClient' (OnClassCondition)
+
+   RestClientAutoConfiguration#restClientBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.client.RestClient$Builder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestClientAutoConfiguration#restClientBuilderConfigurer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.restclient.autoconfigure.RestClientBuilderConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestClientAutoConfiguration#restClientSsl matched:
+      - @ConditionalOnBean (types: org.springframework.boot.ssl.SslBundles; SearchStrategy: all) found bean 'sslBundleRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.restclient.autoconfigure.RestClientSsl; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   RestClientAutoConfiguration.HttpMessageConvertersConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.http.converter.HttpMessageConverters' (OnClassCondition)
+
+   SpringAiRetryAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.retry.RetryUtils' (OnClassCondition)
+
+   SpringAiRetryAutoConfiguration#responseErrorHandler matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.client.ResponseErrorHandler; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SpringAiRetryAutoConfiguration#retryTemplate matched:
+      - @ConditionalOnMissingBean (types: org.springframework.core.retry.RetryTemplate; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   SseWebFluxTransportAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.modelcontextprotocol.client.transport.WebFluxSseClientTransport' (OnClassCondition)
+      - @ConditionalOnProperty (spring.ai.mcp.client.enabled=true) matched (OnPropertyCondition)
+
+   SslAutoConfiguration#sslBundleRegistry matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.ssl.SslBundleRegistry,org.springframework.boot.ssl.SslBundles; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   StdioTransportAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'io.modelcontextprotocol.spec.McpSchema' (OnClassCondition)
+      - @ConditionalOnProperty (spring.ai.mcp.client.enabled=true) matched (OnPropertyCondition)
+
+   StreamableHttpWebFluxTransportAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'io.modelcontextprotocol.client.transport.WebClientStreamableHttpTransport', 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+      - @ConditionalOnProperty (spring.ai.mcp.client.enabled=true) matched (OnPropertyCondition)
+
+   TaskExecutionAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor' (OnClassCondition)
+
+   TaskExecutorConfigurations.AsyncConfigurerConfiguration matched:
+      - @ConditionalOnMissingBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration matched:
+      - AnyNestedCondition 1 matched 1 did not; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ModelCondition @ConditionalOnProperty (spring.task.execution.mode=force) did not find property 'spring.task.execution.mode'; NestedCondition on TaskExecutorConfigurations.OnExecutorCondition.ExecutorBeanCondition @ConditionalOnMissingBean (types: java.util.concurrent.Executor; SearchStrategy: all) did not find any beans (TaskExecutorConfigurations.OnExecutorCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutor matched:
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskExecutorConfigurations.ThreadPoolTaskExecutorBuilderConfiguration#threadPoolTaskExecutorBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.ThreadPoolTaskExecutorBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   TaskSchedulingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.scheduling.concurrent.ThreadPoolTaskScheduler' (OnClassCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+      - @ConditionalOnThreading found PLATFORM (OnThreadingCondition)
+
+   TaskSchedulingConfigurations.ThreadPoolTaskSchedulerBuilderConfiguration#threadPoolTaskSchedulerBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.task.ThreadPoolTaskSchedulerBuilder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ToolCallingAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.ai.chat.model.ChatModel' (OnClassCondition)
+
+   ToolCallingAutoConfiguration#toolCallbackResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.tool.resolution.ToolCallbackResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ToolCallingAutoConfiguration#toolCallingManager matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.model.tool.ToolCallingManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   ToolCallingAutoConfiguration#toolExecutionExceptionProcessor matched:
+      - @ConditionalOnMissingBean (types: org.springframework.ai.tool.execution.ToolExecutionExceptionProcessor; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebClientAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.reactive.function.client.WebClient' (OnClassCondition)
+
+   WebClientAutoConfiguration#webClientBuilder matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.reactive.function.client.WebClient$Builder; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebClientAutoConfiguration#webClientHttpConnectorCustomizer matched:
+      - @ConditionalOnBean (types: org.springframework.http.client.reactive.ClientHttpConnector; SearchStrategy: all) found bean 'clientHttpConnector' (OnBeanCondition)
+
+   WebClientAutoConfiguration#webClientSsl matched:
+      - @ConditionalOnBean (types: org.springframework.boot.ssl.SslBundles; SearchStrategy: all) found bean 'sslBundleRegistry'; @ConditionalOnMissingBean (types: org.springframework.boot.webclient.autoconfigure.WebClientSsl; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebClientAutoConfiguration.WebClientCodecsConfiguration matched:
+      - @ConditionalOnBean (types: org.springframework.boot.http.codec.CodecCustomizer; SearchStrategy: all) found beans 'jacksonCodecCustomizer', 'defaultCodecCustomizer', 'defaultPartHttpMessageReaderCustomizer' (OnBeanCondition)
+
+   WebClientAutoConfiguration.WebClientCodecsConfiguration#exchangeStrategiesCustomizer matched:
+      - @ConditionalOnMissingBean (types: org.springframework.boot.webclient.autoconfigure.WebClientCodecCustomizer; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebFluxAutoConfiguration matched:
+      - @ConditionalOnClass found required class 'org.springframework.web.reactive.config.WebFluxConfigurer' (OnClassCondition)
+      - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+      - @ConditionalOnMissingBean (types: org.springframework.web.reactive.config.WebFluxConfigurationSupport; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebFluxAutoConfiguration.EnableWebFluxConfiguration#localeContextResolver matched:
+      - @ConditionalOnMissingBean (names: localeContextResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebFluxAutoConfiguration.EnableWebFluxConfiguration#webSessionManager matched:
+      - @ConditionalOnMissingBean (names: webSessionManager; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+   WebSessionIdResolverAutoConfiguration matched:
+      - @ConditionalOnClass found required classes 'org.springframework.web.server.session.WebSessionManager', 'reactor.core.publisher.Mono' (OnClassCondition)
+      - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+
+   WebSessionIdResolverAutoConfiguration#webSessionIdResolver matched:
+      - @ConditionalOnMissingBean (types: org.springframework.web.server.session.WebSessionIdResolver; SearchStrategy: all) did not find any beans (OnBeanCondition)
+
+
+Negative matches:
+-----------------
+
+   AopAutoConfiguration.AspectJAutoProxyingConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.aspectj.weaver.Advice' (OnClassCondition)
+
+   ChatClientAutoConfiguration.TracerNotPresentObservationConfiguration#chatClientCompletionObservationHandler:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.chat.client.observations.log-completion=true) did not find property 'log-completion' (OnPropertyCondition)
+
+   ChatClientAutoConfiguration.TracerNotPresentObservationConfiguration#chatClientPromptContentObservationHandler:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.chat.client.observations.log-prompt=true) did not find property 'log-prompt' (OnPropertyCondition)
+
+   ChatClientAutoConfiguration.TracerPresentObservationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.tracing.Tracer' (OnClassCondition)
+
+   ChatObservationAutoConfiguration#chatModelMeterObservationHandler:
+      Did not match:
+         - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) did not find any beans of type io.micrometer.core.instrument.MeterRegistry (OnBeanCondition)
+
+   ChatObservationAutoConfiguration.TracerNotPresentObservationConfiguration#chatModelCompletionObservationHandler:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.chat.observations.log-completion=true) did not find property 'log-completion' (OnPropertyCondition)
+
+   ChatObservationAutoConfiguration.TracerNotPresentObservationConfiguration#chatModelPromptContentObservationHandler:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.chat.observations.log-prompt=true) did not find property 'log-prompt' (OnPropertyCondition)
+
+   ChatObservationAutoConfiguration.TracerPresentObservationConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'io.micrometer.tracing.Tracer' (OnClassCondition)
+
+   CodecsAutoConfiguration.Jackson2JsonCodecConfiguration:
+      Did not match:
+         - AnyNestedCondition 0 matched 2 did not; NestedCondition on CodecsAutoConfiguration.NoJacksonOrJackson2Preferred.Jackson2Preferred @ConditionalOnProperty (spring.http.codecs.preferred-json-mapper=jackson2) did not find property 'spring.http.codecs.preferred-json-mapper'; NestedCondition on CodecsAutoConfiguration.NoJacksonOrJackson2Preferred.NoJackson @ConditionalOnMissingClass found unwanted class 'tools.jackson.databind.json.JsonMapper' (CodecsAutoConfiguration.NoJacksonOrJackson2Preferred)
+      Matched:
+         - @ConditionalOnClass found required class 'com.fasterxml.jackson.databind.ObjectMapper' (OnClassCondition)
+
+   CodecsAutoConfiguration.KotlinxSerializationJsonCodecConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'kotlinx.serialization.json.Json' (OnClassCondition)
+
+   EmbeddingObservationAutoConfiguration#embeddingModelMeterObservationHandler:
+      Did not match:
+         - @ConditionalOnBean (types: io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) did not find any beans of type io.micrometer.core.instrument.MeterRegistry (OnBeanCondition)
+
+   HttpClientMetricsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.micrometer.metrics.autoconfigure.MetricsProperties' (OnClassCondition)
+
+   HttpMessageConvertersAutoConfiguration:
+      Did not match:
+         - NoneNestedConditions 1 matched 0 did not; NestedCondition on HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition.ReactiveWebApplication found ConfigurableReactiveWebEnvironment (HttpMessageConvertersAutoConfiguration.NotReactiveWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.http.converter.HttpMessageConverter' (OnClassCondition)
+
+   HttpServiceClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.service.registry.HttpServiceProxyRegistry; SearchStrategy: all) did not find any beans of type org.springframework.web.service.registry.HttpServiceProxyRegistry (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.web.client.support.RestClientAdapter' (OnClassCondition)
+
+   ImperativeHttpClientAutoConfiguration:
+      Did not match:
+         - NoneNestedConditions 1 matched 0 did not; NestedCondition on NotReactiveWebApplicationCondition.ReactiveWebApplication found ConfigurableReactiveWebEnvironment (NotReactiveWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.http.client.ClientHttpRequestFactory' (OnClassCondition)
+
+   JacksonAutoConfiguration.CborConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'tools.jackson.dataformat.cbor.CBORMapper' (OnClassCondition)
+
+   JacksonAutoConfiguration.XmlConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'tools.jackson.dataformat.xml.XmlMapper' (OnClassCondition)
+
+   JmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.jmx.enabled=true) did not find property 'spring.jmx.enabled' (OnPropertyCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.jmx.export.MBeanExporter' (OnClassCondition)
+
+   McpClientAnnotationScannerAutoConfiguration#clientMcpAsyncHandlersRegistry:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.mcp.client.type=ASYNC) found different value in property 'type' (OnPropertyCondition)
+
+   McpClientAutoConfiguration#makeAsyncClientsClosable:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.mcp.client.type=ASYNC) found different value in property 'type' (OnPropertyCondition)
+
+   McpClientAutoConfiguration#mcpAsyncClientConfigurer:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.mcp.client.type=ASYNC) found different value in property 'type' (OnPropertyCondition)
+
+   McpClientAutoConfiguration#mcpAsyncClients:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.mcp.client.type=ASYNC) found different value in property 'type' (OnPropertyCondition)
+
+   McpClientAutoConfiguration#mcpAsyncToolChangeEventEmmiter:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.mcp.client.type=ASYNC) found different value in property 'type' (OnPropertyCondition)
+
+   McpToolCallbackAutoConfiguration#mcpAsyncToolCallbacks:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.mcp.client.type=ASYNC) found different value in property 'type' (OnPropertyCondition)
+
+   MessageSourceAutoConfiguration:
+      Did not match:
+         - ResourceBundle did not find bundle with basename messages (MessageSourceAutoConfiguration.ResourceBundleCondition)
+
+   NettyReactiveManagementContextAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.web.server.ManagementContextFactory' (OnClassCondition)
+
+   ProjectInfoAutoConfiguration#buildProperties:
+      Did not match:
+         - @ConditionalOnResource did not find resource '${spring.info.build.location:classpath:META-INF/build-info.properties}' (OnResourceCondition)
+
+   ProjectInfoAutoConfiguration#gitProperties:
+      Did not match:
+         - GitResource did not find git info at classpath:git.properties (ProjectInfoAutoConfiguration.GitResourceAvailableCondition)
+
+   ReactiveHttpServiceClientAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.web.service.registry.HttpServiceProxyRegistry; SearchStrategy: all) did not find any beans of type org.springframework.web.service.registry.HttpServiceProxyRegistry (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required class 'org.springframework.web.reactive.function.client.support.WebClientAdapter' (OnClassCondition)
+
+   ReactiveWebServerConfiguration#forwardedHeaderTransformer:
+      Did not match:
+         - @ConditionalOnProperty (server.forward-headers-strategy=framework) did not find property 'server.forward-headers-strategy' (OnPropertyCondition)
+
+   RestClientAutoConfiguration.HttpMessageConvertersConfiguration#httpMessageConvertersRestClientCustomizer:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.boot.http.converter.autoconfigure.ClientHttpMessageConvertersCustomizer; SearchStrategy: all) did not find any beans of type org.springframework.boot.http.converter.autoconfigure.ClientHttpMessageConvertersCustomizer (OnBeanCondition)
+
+   RestClientObservationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.micrometer.observation.autoconfigure.ObservationProperties' (OnClassCondition)
+
+   RestTemplateAutoConfiguration:
+      Did not match:
+         - NoneNestedConditions 1 matched 0 did not; NestedCondition on NotReactiveWebApplicationCondition.ReactiveWebApplication found ConfigurableReactiveWebEnvironment (NotReactiveWebApplicationCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'org.springframework.web.client.RestTemplate', 'org.springframework.http.converter.HttpMessageConverters' (OnClassCondition)
+
+   RestTemplateObservationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.micrometer.observation.autoconfigure.ObservationProperties' (OnClassCondition)
+
+   SpringApplicationAdminJmxAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.application.admin.enabled=true) did not find property 'spring.application.admin.enabled' (OnPropertyCondition)
+
+   TaskExecutorConfigurations.AsyncConfigurerWrapperConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: org.springframework.scheduling.annotation.AsyncConfigurer; SearchStrategy: all) did not find any beans of type org.springframework.scheduling.annotation.AsyncConfigurer (OnBeanCondition)
+
+   TaskExecutorConfigurations.SimpleAsyncTaskExecutorBuilderConfiguration#simpleAsyncTaskExecutorBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskExecutorBuilder' simpleAsyncTaskExecutorBuilder (OnBeanCondition)
+
+   TaskExecutorConfigurations.TaskExecutorConfiguration#applicationTaskExecutorVirtualThreads:
+      Did not match:
+         - @ConditionalOnThreading did not find VIRTUAL (OnThreadingCondition)
+
+   TaskSchedulingAutoConfiguration#scheduledBeanLazyInitializationExcludeFilter:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.scheduling.config.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.scheduling.config.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   TaskSchedulingConfigurations.SimpleAsyncTaskSchedulerBuilderConfiguration#simpleAsyncTaskSchedulerBuilderVirtualThreads:
+      Did not match:
+         - @ConditionalOnMissingBean (types: org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder; SearchStrategy: all) found beans of type 'org.springframework.boot.task.SimpleAsyncTaskSchedulerBuilder' simpleAsyncTaskSchedulerBuilder (OnBeanCondition)
+
+   TaskSchedulingConfigurations.TaskSchedulerConfiguration:
+      Did not match:
+         - @ConditionalOnBean (names: org.springframework.scheduling.config.internalScheduledAnnotationProcessor; SearchStrategy: all) did not find any beans named org.springframework.scheduling.config.internalScheduledAnnotationProcessor (OnBeanCondition)
+
+   ToolCallingAutoConfiguration#toolCallingContentObservationFilter:
+      Did not match:
+         - @ConditionalOnProperty (spring.ai.tools.observations.include-content=true) did not find property 'include-content' (OnPropertyCondition)
+
+   WebClientObservationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.micrometer.observation.autoconfigure.ObservationProperties' (OnClassCondition)
+
+   WebFluxAutoConfiguration#hiddenHttpMethodFilter:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.webflux.hiddenmethod.filter.enabled=true) did not find property 'spring.webflux.hiddenmethod.filter.enabled' (OnPropertyCondition)
+
+   WebFluxAutoConfiguration.ProblemDetailsErrorHandlingConfiguration:
+      Did not match:
+         - @ConditionalOnBooleanProperty (spring.webflux.problemdetails.enabled=true) did not find property 'spring.webflux.problemdetails.enabled' (OnPropertyCondition)
+
+   WebFluxAutoConfiguration.ResourceChainCustomizerConfiguration:
+      Did not match:
+         - @ConditionalOnEnabledResourceChain did not find class org.webjars.WebJarVersionLocator (OnEnabledResourceChainCondition)
+
+   WebFluxHealthEndpointExtensionAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.health.actuate.endpoint.HealthEndpoint' (OnClassCondition)
+
+   WebFluxHttpExchangesAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean did not find required type 'org.springframework.boot.actuate.web.exchanges.HttpExchangeRepository' (OnBeanCondition)
+
+   WebFluxMappingsAutoConfiguration:
+      Did not match:
+         - @ConditionalOnClass did not find required class 'org.springframework.boot.actuate.autoconfigure.endpoint.condition.ConditionalOnAvailableEndpoint' (OnClassCondition)
+
+   WebFluxObservationAutoConfiguration:
+      Did not match:
+         - @ConditionalOnBean (types: io.micrometer.observation.ObservationRegistry,io.micrometer.core.instrument.MeterRegistry; SearchStrategy: all) did not find any beans of type io.micrometer.observation.ObservationRegistry, io.micrometer.core.instrument.MeterRegistry (OnBeanCondition)
+      Matched:
+         - @ConditionalOnClass found required classes 'io.micrometer.observation.Observation', 'io.micrometer.core.instrument.MeterRegistry' (OnClassCondition)
+         - found ConfigurableReactiveWebEnvironment (OnWebApplicationCondition)
+
+
+Exclusions:
+-----------
+
+    None
+
+
+Unconditional classes:
+----------------------
+
+    org.springframework.boot.http.client.autoconfigure.HttpClientAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.ConfigurationPropertiesAutoConfiguration
+
+    org.springframework.boot.http.client.autoconfigure.service.HttpServiceClientPropertiesAutoConfiguration
+
+    org.springframework.boot.autoconfigure.ssl.SslAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.LifecycleAutoConfiguration
+
+    org.springframework.boot.autoconfigure.context.PropertyPlaceholderAutoConfiguration
+
+    org.springframework.boot.autoconfigure.availability.ApplicationAvailabilityAutoConfiguration
+
+    org.springframework.boot.autoconfigure.info.ProjectInfoAutoConfiguration
+
+
+
+2026-02-03T09:35:14.016-07:00 DEBUG 13877 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : Application failed to start due to an exception
+
+org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'io.modelcontextprotocol.client.McpSyncClient' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:2297) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1725) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1362) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1194) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:912) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1382) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1221) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:565) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:201) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveBean(DefaultListableBeanFactory.java:1225) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1704) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1651) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:763) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:747) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:492) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1446) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:525) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:333) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:371) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:331) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:196) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1218) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1184) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1121) ~[spring-beans-7.0.3.jar:7.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:993) ~[spring-context-7.0.3.jar:7.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:620) ~[spring-context-7.0.3.jar:7.0.3]
+	at org.springframework.boot.web.server.reactive.context.ReactiveWebServerApplicationContext.refresh(ReactiveWebServerApplicationContext.java:69) ~[spring-boot-web-server-4.0.2.jar:4.0.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:756) ~[spring-boot-4.0.2.jar:4.0.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:445) ~[spring-boot-4.0.2.jar:4.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:321) ~[spring-boot-4.0.2.jar:4.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1365) ~[spring-boot-4.0.2.jar:4.0.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1354) ~[spring-boot-4.0.2.jar:4.0.2]
+	at com.naga.mcp.client.SpringBootAiMcpClientApplication.main(SpringBootAiMcpClientApplication.java:12) ~[classes/:na]
+
+2026-02-03T09:35:14.156-07:00 ERROR 13877 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 1 of method chatClient in com.naga.mcp.client.configuration.McpClientChatConfig required a bean of type 'io.modelcontextprotocol.client.McpSyncClient' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'io.modelcontextprotocol.client.McpSyncClient' in your configuration.
+
+2026-02-03T20:30:08.752-07:00  INFO 14480 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 14480 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T20:30:08.753-07:00  INFO 14480 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T20:30:09.094-07:00 ERROR 14480 --- [spring_boot_ai_mcp_client] [main] i.n.r.d.DnsServerAddressStreamProviders  : Unable to load io.netty.resolver.dns.macos.MacOSDnsServerAddressStreamProvider, fallback to system defaults. This may result in incorrect DNS resolutions on MacOS. Check whether you have a dependency on 'io.netty:netty-resolver-dns-native-macos'. Use DEBUG level to see the full stack: java.lang.UnsatisfiedLinkError: failed to load the required native library
+2026-02-03T20:30:09.135-07:00 DEBUG 14480 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T20:30:09.161-07:00 DEBUG 14480 --- [spring_boot_ai_mcp_client] [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2026-02-03T20:30:09.164-07:00 DEBUG 14480 --- [spring_boot_ai_mcp_client] [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-02-03T20:30:09.190-07:00 DEBUG 14480 --- [spring_boot_ai_mcp_client] [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2026-02-03T20:30:09.196-07:00 DEBUG 14480 --- [spring_boot_ai_mcp_client] [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-03T20:30:09.207-07:00  WARN 14480 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.s.SyncMcpSamplingProvider        : No sampling methods found
+2026-02-03T20:30:09.207-07:00  WARN 14480 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.e.SyncMcpElicitationProvider     : No elicitation methods found
+2026-02-03T20:30:09.237-07:00  INFO 14480 --- [spring_boot_ai_mcp_client] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8089 (http)
+2026-02-03T20:30:09.246-07:00  INFO 14480 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Started SpringBootAiMcpClientApplication in 0.616 seconds (process running for 0.747)
+2026-02-03T20:31:45.907-07:00  INFO 14480 --- [spring_boot_ai_mcp_client] [SpringApplicationShutdownHook] o.s.boot.reactor.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-03T20:31:45.914-07:00  INFO 14480 --- [spring_boot_ai_mcp_client] [netty-shutdown] o.s.boot.reactor.netty.GracefulShutdown  : Graceful shutdown complete
+2026-02-03T20:31:55.018-07:00  INFO 14521 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 14521 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T20:31:55.019-07:00  INFO 14521 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T20:31:55.574-07:00 DEBUG 14521 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T20:31:55.598-07:00 DEBUG 14521 --- [spring_boot_ai_mcp_client] [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2026-02-03T20:31:55.602-07:00 DEBUG 14521 --- [spring_boot_ai_mcp_client] [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-02-03T20:31:55.628-07:00 DEBUG 14521 --- [spring_boot_ai_mcp_client] [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2026-02-03T20:31:55.634-07:00 DEBUG 14521 --- [spring_boot_ai_mcp_client] [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-03T20:31:55.646-07:00  WARN 14521 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.s.SyncMcpSamplingProvider        : No sampling methods found
+2026-02-03T20:31:55.646-07:00  WARN 14521 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.e.SyncMcpElicitationProvider     : No elicitation methods found
+2026-02-03T20:31:55.683-07:00  INFO 14521 --- [spring_boot_ai_mcp_client] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8089 (http)
+2026-02-03T20:31:55.689-07:00  INFO 14521 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Started SpringBootAiMcpClientApplication in 0.798 seconds (process running for 0.92)
+2026-02-03T20:33:08.272-07:00  INFO 14521 --- [spring_boot_ai_mcp_client] [SpringApplicationShutdownHook] o.s.boot.reactor.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-03T20:33:08.278-07:00  INFO 14521 --- [spring_boot_ai_mcp_client] [netty-shutdown] o.s.boot.reactor.netty.GracefulShutdown  : Graceful shutdown complete
+2026-02-03T20:33:16.875-07:00  INFO 14569 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 14569 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T20:33:16.876-07:00  INFO 14569 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T20:33:17.412-07:00 DEBUG 14569 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T20:33:17.438-07:00 DEBUG 14569 --- [spring_boot_ai_mcp_client] [main] s.w.r.r.m.a.RequestMappingHandlerMapping : 1 mappings in 'requestMappingHandlerMapping'
+2026-02-03T20:33:17.442-07:00 DEBUG 14569 --- [spring_boot_ai_mcp_client] [main] o.s.w.r.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2026-02-03T20:33:17.467-07:00 DEBUG 14569 --- [spring_boot_ai_mcp_client] [main] o.s.w.r.r.m.a.ControllerMethodResolver   : ControllerAdvice beans: none
+2026-02-03T20:33:17.473-07:00 DEBUG 14569 --- [spring_boot_ai_mcp_client] [main] o.s.w.s.adapter.HttpWebHandlerAdapter    : enableLoggingRequestDetails='false': form data and headers will be masked to prevent unsafe logging of potentially sensitive data
+2026-02-03T20:33:17.484-07:00  WARN 14569 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.s.SyncMcpSamplingProvider        : No sampling methods found
+2026-02-03T20:33:17.485-07:00  WARN 14569 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.e.SyncMcpElicitationProvider     : No elicitation methods found
+2026-02-03T20:33:17.519-07:00  INFO 14569 --- [spring_boot_ai_mcp_client] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8089 (http)
+2026-02-03T20:33:17.527-07:00  INFO 14569 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Started SpringBootAiMcpClientApplication in 0.777 seconds (process running for 0.894)
+2026-02-03T20:41:01.797-07:00  INFO 14569 --- [spring_boot_ai_mcp_client] [SpringApplicationShutdownHook] o.s.boot.reactor.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-03T20:41:01.803-07:00  INFO 14569 --- [spring_boot_ai_mcp_client] [netty-shutdown] o.s.boot.reactor.netty.GracefulShutdown  : Graceful shutdown complete
+2026-02-03T20:41:07.648-07:00  INFO 14610 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 14610 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T20:41:07.649-07:00  INFO 14610 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T20:41:08.180-07:00 DEBUG 14610 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T20:41:08.248-07:00  WARN 14610 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.s.SyncMcpSamplingProvider        : No sampling methods found
+2026-02-03T20:41:08.248-07:00  WARN 14610 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.e.SyncMcpElicitationProvider     : No elicitation methods found
+2026-02-03T20:41:08.284-07:00  INFO 14610 --- [spring_boot_ai_mcp_client] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8089 (http)
+2026-02-03T20:41:08.292-07:00  INFO 14610 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Started SpringBootAiMcpClientApplication in 0.763 seconds (process running for 0.879)
+2026-02-03T20:47:12.132-07:00  INFO 14610 --- [spring_boot_ai_mcp_client] [SpringApplicationShutdownHook] o.s.boot.reactor.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-03T20:47:12.139-07:00  INFO 14610 --- [spring_boot_ai_mcp_client] [netty-shutdown] o.s.boot.reactor.netty.GracefulShutdown  : Graceful shutdown complete
+2026-02-03T20:47:20.686-07:00  INFO 14873 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 14873 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-03T20:47:20.687-07:00  INFO 14873 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-03T20:47:21.223-07:00 DEBUG 14873 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-03T20:47:21.291-07:00  WARN 14873 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.s.SyncMcpSamplingProvider        : No sampling methods found
+2026-02-03T20:47:21.291-07:00  WARN 14873 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.e.SyncMcpElicitationProvider     : No elicitation methods found
+2026-02-03T20:47:21.326-07:00  INFO 14873 --- [spring_boot_ai_mcp_client] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8089 (http)
+2026-02-03T20:47:21.332-07:00  INFO 14873 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Started SpringBootAiMcpClientApplication in 0.774 seconds (process running for 0.889)
