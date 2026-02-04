@@ -5,39 +5,37 @@ import org.springframework.ai.chat.client.ChatClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.http.MediaType;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 import reactor.core.publisher.Flux;
+import reactor.core.publisher.Mono;
+import reactor.core.scheduler.Schedulers;
 
 @RestController
-@RequestMapping("/mcp/client/chat")
+@RequestMapping("/mcp/client/")
 public class McpClientChatController {
 
     @Autowired
     private McpClientChatService mcpClientChatService;
 
-    @Qualifier(value="MCP_CLIENT")
-    private ChatClient chatClient;
 
+    private final ChatClient chatClient;
 
-    @GetMapping(
-            value = "/stream",
-            produces = MediaType.TEXT_EVENT_STREAM_VALUE
-    )
-    public Flux<String> chat(@RequestParam String prompt) {
-        return mcpClientChatService.chat(prompt);
+    public McpClientChatController(@Qualifier(value="MCP_CLIENT") ChatClient chatClient) {
+        this.chatClient = chatClient;
+    }
+
+    @PostMapping("/github/prs")
+    public Mono<String> chatSingle(@RequestBody String prompt) {
+        return mcpClientChatService.chat(prompt)
+                .collectList()
+                .map(list -> String.join("", list));
     }
 
     @GetMapping("/test")
-    public String test() {
-        return chatClient.prompt()
+    public Mono<String> test() {
+        return  Mono.fromCallable(() -> chatClient.prompt()
                 .user("Use MCP tools to list open pull requests")
                 .call()
-                .content();
+                .content()).subscribeOn(Schedulers.boundedElastic());
     }
-
-
-
 }
