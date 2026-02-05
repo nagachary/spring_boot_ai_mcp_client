@@ -20,20 +20,27 @@ public class McpClientChatController {
 
     private final ChatClient chatClient;
 
-    public McpClientChatController(@Qualifier(value="MCP_CLIENT") ChatClient chatClient) {
+    public McpClientChatController(@Qualifier(value = "MCP_CLIENT") ChatClient chatClient) {
         this.chatClient = chatClient;
     }
 
     @PostMapping("/github/prs")
-    public Mono<String> chatSingle(@RequestBody String prompt) {
-        return mcpClientChatService.chat(prompt)
+    public Mono<String> chatSingle(@RequestBody String prompt, @RequestParam("chatId") String customChatId) {
+        return mcpClientChatService.chat(prompt, customChatId)
                 .collectList()
                 .map(list -> String.join("", list));
     }
 
     @GetMapping("/test")
     public Mono<String> test() {
-        return  Mono.fromCallable(() -> chatClient.prompt()
+        return Mono.fromCallable(() -> chatClient
+                .prompt()
+                .system("""
+                        You are a helpful assistant with access to real-time server tools. 
+                        ALWAYS prioritize using the available tools to fetch data or perform actions.
+                        DO NOT rely on your internal training data if a tool can provide the information.
+                        If a tool call fails or is unavailable, only then inform the user.
+                        """)
                 .user("Use MCP tools to list open pull requests")
                 .call()
                 .content()).subscribeOn(Schedulers.boundedElastic());
