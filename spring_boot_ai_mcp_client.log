@@ -1085,3 +1085,1158 @@ Consider defining a bean of type 'io.modelcontextprotocol.client.McpSyncClient' 
 2026-02-03T20:47:21.291-07:00  WARN 14873 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.e.SyncMcpElicitationProvider     : No elicitation methods found
 2026-02-03T20:47:21.326-07:00  INFO 14873 --- [spring_boot_ai_mcp_client] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8089 (http)
 2026-02-03T20:47:21.332-07:00  INFO 14873 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Started SpringBootAiMcpClientApplication in 0.774 seconds (process running for 0.889)
+2026-02-05T21:12:06.183-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 34570 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T21:12:06.184-07:00 DEBUG 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-02-05T21:12:06.184-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T21:12:06.483-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-02-05T21:12:06.487-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05T21:12:06.487-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-05T21:12:06.505-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05T21:12:06.505-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 310 ms
+2026-02-05T21:12:06.680-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 3 endpoints beneath base path '/actuator'
+2026-02-05T21:12:06.720-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8089 (http) with context path '/'
+2026-02-05T21:12:06.726-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : Started SpringBootAiMcpClientApplication in 0.667 seconds (process running for 0.773)
+2026-02-05T21:12:06.751-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : ========================================
+2026-02-05T21:12:06.751-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : ✓ MCP Client started successfully
+2026-02-05T21:12:06.751-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : ✓ Chat endpoint: http://localhost:8089/api/chat
+2026-02-05T21:12:06.751-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : ✓ Test endpoint: http://localhost:8089/api/test
+2026-02-05T21:12:06.751-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : ✓ Health: http://localhost:8089/actuator/health
+2026-02-05T21:12:06.751-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : ✓ Connected to MCP Server: http://localhost:8088/mcp/sse
+2026-02-05T21:12:06.751-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : ✓ Using Ollama model: mistral
+2026-02-05T21:12:06.752-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.c.SpringBootAiMcpClientApplication   : ========================================
+2026-02-05T21:12:06.752-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.client.config.McpClientChatConfig    : MCP Client configuration loaded
+2026-02-05T21:12:06.752-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.client.config.McpClientChatConfig    : Attempting to connect to MCP Server at: http://localhost:8088/mcp/sse
+2026-02-05T21:12:06.753-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [main] c.n.client.config.McpClientChatConfig    : Tools from MCP server will be automatically available to the AI model
+2026-02-05T21:14:32.677-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-05T21:14:34.704-07:00  INFO 34570 --- [spring_boot_ai_mcp_client] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2026-02-05T21:14:40.897-07:00  INFO 34654 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 34654 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T21:14:40.897-07:00 DEBUG 34654 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-02-05T21:14:40.897-07:00  INFO 34654 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T21:14:41.220-07:00  INFO 34654 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-02-05T21:14:41.224-07:00  INFO 34654 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05T21:14:41.225-07:00  INFO 34654 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-05T21:14:41.241-07:00  INFO 34654 --- [spring_boot_ai_mcp_client] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05T21:14:41.241-07:00  INFO 34654 --- [spring_boot_ai_mcp_client] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 331 ms
+2026-02-05T21:14:41.288-07:00  WARN 34654 --- [spring_boot_ai_mcp_client] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+2026-02-05T21:14:41.289-07:00  INFO 34654 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-05T21:14:41.296-07:00  INFO 34654 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-05T21:14:41.301-07:00 ERROR 34654 --- [spring_boot_ai_mcp_client] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.naga.mcp.client.SpringBootAiMcpClientApplication.main(SpringBootAiMcpClientApplication.java:16) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 49 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 62 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/retry/RetryException
+	at org.springframework.ai.ollama.api.OllamaApi$Builder.<init>(OllamaApi.java:799) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.api.OllamaApi.builder(OllamaApi.java:61) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at com.naga.mcp.client.configuration.OllamaConfig.ollamaApi(OllamaConfig.java:18) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.CGLIB$ollamaApi$1(<generated>) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348) ~[spring-context-6.2.2.jar:6.2.2]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.ollamaApi(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.retry.RetryException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 76 common frames omitted
+
+2026-02-05T21:16:43.377-07:00  INFO 34740 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 34740 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T21:16:43.378-07:00 DEBUG 34740 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-02-05T21:16:43.378-07:00  INFO 34740 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T21:16:43.783-07:00  INFO 34740 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-02-05T21:16:43.787-07:00  INFO 34740 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05T21:16:43.787-07:00  INFO 34740 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-05T21:16:43.805-07:00  INFO 34740 --- [spring_boot_ai_mcp_client] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05T21:16:43.805-07:00  INFO 34740 --- [spring_boot_ai_mcp_client] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 416 ms
+2026-02-05T21:16:43.865-07:00  WARN 34740 --- [spring_boot_ai_mcp_client] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+2026-02-05T21:16:43.866-07:00  INFO 34740 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-05T21:16:43.872-07:00  INFO 34740 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-05T21:16:43.877-07:00 ERROR 34740 --- [spring_boot_ai_mcp_client] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.naga.mcp.client.SpringBootAiMcpClientApplication.main(SpringBootAiMcpClientApplication.java:16) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 49 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 62 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/retry/RetryException
+	at org.springframework.ai.ollama.api.OllamaApi$Builder.<init>(OllamaApi.java:799) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.api.OllamaApi.builder(OllamaApi.java:61) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at com.naga.mcp.client.configuration.OllamaConfig.ollamaApi(OllamaConfig.java:18) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.CGLIB$ollamaApi$0(<generated>) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348) ~[spring-context-6.2.2.jar:6.2.2]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.ollamaApi(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.retry.RetryException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 76 common frames omitted
+
+2026-02-05T21:19:14.531-07:00  INFO 34847 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 34847 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T21:19:14.533-07:00 DEBUG 34847 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-02-05T21:19:14.533-07:00  INFO 34847 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T21:19:14.930-07:00  INFO 34847 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-02-05T21:19:14.935-07:00  INFO 34847 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05T21:19:14.935-07:00  INFO 34847 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-05T21:19:14.952-07:00  INFO 34847 --- [spring_boot_ai_mcp_client] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05T21:19:14.952-07:00  INFO 34847 --- [spring_boot_ai_mcp_client] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 407 ms
+2026-02-05T21:19:15.014-07:00  WARN 34847 --- [spring_boot_ai_mcp_client] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+2026-02-05T21:19:15.015-07:00  INFO 34847 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-05T21:19:15.022-07:00  INFO 34847 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-05T21:19:15.027-07:00 ERROR 34847 --- [spring_boot_ai_mcp_client] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.naga.mcp.client.SpringBootAiMcpClientApplication.main(SpringBootAiMcpClientApplication.java:18) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 49 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 62 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/retry/RetryException
+	at org.springframework.ai.ollama.api.OllamaApi$Builder.<init>(OllamaApi.java:799) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.api.OllamaApi.builder(OllamaApi.java:61) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at com.naga.mcp.client.configuration.OllamaConfig.ollamaApi(OllamaConfig.java:18) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.CGLIB$ollamaApi$0(<generated>) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348) ~[spring-context-6.2.2.jar:6.2.2]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.ollamaApi(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.retry.RetryException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 76 common frames omitted
+
+2026-02-05T21:22:02.046-07:00  INFO 35048 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 35048 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T21:22:02.046-07:00 DEBUG 35048 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-02-05T21:22:02.047-07:00  INFO 35048 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T21:22:02.390-07:00  INFO 35048 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-02-05T21:22:02.395-07:00  INFO 35048 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05T21:22:02.395-07:00  INFO 35048 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-05T21:22:02.411-07:00  INFO 35048 --- [spring_boot_ai_mcp_client] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05T21:22:02.412-07:00  INFO 35048 --- [spring_boot_ai_mcp_client] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 352 ms
+2026-02-05T21:22:02.463-07:00  WARN 35048 --- [spring_boot_ai_mcp_client] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+2026-02-05T21:22:02.464-07:00  INFO 35048 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-05T21:22:02.470-07:00  INFO 35048 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-05T21:22:02.476-07:00 ERROR 35048 --- [spring_boot_ai_mcp_client] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.naga.mcp.client.SpringBootAiMcpClientApplication.main(SpringBootAiMcpClientApplication.java:18) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 49 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 62 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/retry/RetryException
+	at org.springframework.ai.ollama.api.OllamaApi$Builder.<init>(OllamaApi.java:799) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.api.OllamaApi.builder(OllamaApi.java:61) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at com.naga.mcp.client.configuration.OllamaConfig.ollamaApi(OllamaConfig.java:18) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.CGLIB$ollamaApi$1(<generated>) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348) ~[spring-context-6.2.2.jar:6.2.2]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.ollamaApi(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.retry.RetryException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 76 common frames omitted
+
+2026-02-05T22:02:01.090-07:00  INFO 35317 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 35317 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T22:02:01.091-07:00 DEBUG 35317 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-02-05T22:02:01.091-07:00  INFO 35317 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T22:02:01.403-07:00  INFO 35317 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-02-05T22:02:01.407-07:00  INFO 35317 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05T22:02:01.408-07:00  INFO 35317 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-05T22:02:01.423-07:00  INFO 35317 --- [spring_boot_ai_mcp_client] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05T22:02:01.424-07:00  INFO 35317 --- [spring_boot_ai_mcp_client] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 321 ms
+2026-02-05T22:02:01.470-07:00  WARN 35317 --- [spring_boot_ai_mcp_client] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+2026-02-05T22:02:01.471-07:00  INFO 35317 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-05T22:02:01.478-07:00  INFO 35317 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-05T22:02:01.482-07:00 ERROR 35317 --- [spring_boot_ai_mcp_client] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.naga.mcp.client.SpringBootAiMcpClientApplication.main(SpringBootAiMcpClientApplication.java:18) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 49 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 62 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/retry/RetryException
+	at org.springframework.ai.ollama.api.OllamaApi$Builder.<init>(OllamaApi.java:799) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.api.OllamaApi.builder(OllamaApi.java:61) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at com.naga.mcp.client.configuration.OllamaConfig.ollamaApi(OllamaConfig.java:14) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.CGLIB$ollamaApi$0(<generated>) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348) ~[spring-context-6.2.2.jar:6.2.2]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.ollamaApi(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.retry.RetryException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 76 common frames omitted
+
+2026-02-05T22:04:00.834-07:00  INFO 35361 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 35361 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T22:04:00.835-07:00 DEBUG 35361 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-02-05T22:04:00.835-07:00  INFO 35361 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T22:04:01.186-07:00  INFO 35361 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-02-05T22:04:01.192-07:00  INFO 35361 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05T22:04:01.192-07:00  INFO 35361 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-05T22:04:01.210-07:00  INFO 35361 --- [spring_boot_ai_mcp_client] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05T22:04:01.210-07:00  INFO 35361 --- [spring_boot_ai_mcp_client] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 362 ms
+2026-02-05T22:04:01.260-07:00  WARN 35361 --- [spring_boot_ai_mcp_client] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+2026-02-05T22:04:01.261-07:00  INFO 35361 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-05T22:04:01.268-07:00  INFO 35361 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-05T22:04:01.273-07:00 ERROR 35361 --- [spring_boot_ai_mcp_client] [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:788) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:768) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:509) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1445) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:600) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1122) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1093) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1030) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.2.jar:6.2.2]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361) ~[spring-boot-3.4.2.jar:3.4.2]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350) ~[spring-boot-3.4.2.jar:3.4.2]
+	at com.naga.mcp.client.SpringBootAiMcpClientApplication.main(SpringBootAiMcpClientApplication.java:18) ~[classes/:na]
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:240) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1381) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1218) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:785) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 22 common frames omitted
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'ollamaChatModel' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Unsatisfied dependency expressed through method 'ollamaChatModel' parameter 0: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:804) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:546) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:254) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1631) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 35 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'ollamaApi' defined in class path resource [com/naga/mcp/client/configuration/OllamaConfig.class]: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:489) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1361) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1191) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:563) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:523) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:336) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:307) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:334) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1573) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1519) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 49 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.ollama.api.OllamaApi]: Factory method 'ollamaApi' threw exception with message: org/springframework/core/retry/RetryException
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.2.jar:6.2.2]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 62 common frames omitted
+Caused by: java.lang.NoClassDefFoundError: org/springframework/core/retry/RetryException
+	at org.springframework.ai.ollama.api.OllamaApi$Builder.<init>(OllamaApi.java:799) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.api.OllamaApi.builder(OllamaApi.java:61) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at com.naga.mcp.client.configuration.OllamaConfig.ollamaApi(OllamaConfig.java:14) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.CGLIB$ollamaApi$0(<generated>) ~[classes/:na]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$FastClass$$1.invoke(<generated>) ~[classes/:na]
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:258) ~[spring-core-6.2.2.jar:6.2.2]
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:348) ~[spring-context-6.2.2.jar:6.2.2]
+	at com.naga.mcp.client.configuration.OllamaConfig$$SpringCGLIB$$0.ollamaApi(<generated>) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.2.jar:6.2.2]
+	... 65 common frames omitted
+Caused by: java.lang.ClassNotFoundException: org.springframework.core.retry.RetryException
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:641) ~[na:na]
+	at java.base/jdk.internal.loader.ClassLoaders$AppClassLoader.loadClass(ClassLoaders.java:188) ~[na:na]
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:526) ~[na:na]
+	... 76 common frames omitted
+
+2026-02-05T22:04:51.819-07:00  INFO 35450 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 35450 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T22:04:51.820-07:00 DEBUG 35450 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-02-05T22:04:51.820-07:00  INFO 35450 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T22:04:52.128-07:00  INFO 35450 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-02-05T22:04:52.133-07:00  INFO 35450 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05T22:04:52.133-07:00  INFO 35450 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-05T22:04:52.149-07:00  INFO 35450 --- [spring_boot_ai_mcp_client] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05T22:04:52.149-07:00  INFO 35450 --- [spring_boot_ai_mcp_client] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 317 ms
+2026-02-05T22:04:52.195-07:00  WARN 35450 --- [spring_boot_ai_mcp_client] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.ai.ollama.OllamaChatModel' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-05T22:04:52.196-07:00  INFO 35450 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-05T22:04:52.204-07:00  INFO 35450 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-05T22:04:52.209-07:00 ERROR 35450 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.naga.mcp.client.service.McpClientChatService required a bean of type 'org.springframework.ai.ollama.OllamaChatModel' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.ai.ollama.OllamaChatModel' in your configuration.
+
+2026-02-05T22:05:10.001-07:00  INFO 35502 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 35502 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T22:05:10.003-07:00 DEBUG 35502 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-02-05T22:05:10.003-07:00  INFO 35502 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T22:05:10.306-07:00  INFO 35502 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-02-05T22:05:10.310-07:00  INFO 35502 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05T22:05:10.310-07:00  INFO 35502 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-05T22:05:10.325-07:00  INFO 35502 --- [spring_boot_ai_mcp_client] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05T22:05:10.325-07:00  INFO 35502 --- [spring_boot_ai_mcp_client] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 310 ms
+2026-02-05T22:05:10.370-07:00  WARN 35502 --- [spring_boot_ai_mcp_client] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.ai.ollama.OllamaChatModel' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-05T22:05:10.371-07:00  INFO 35502 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-05T22:05:10.377-07:00  INFO 35502 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-05T22:05:10.383-07:00 ERROR 35502 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.naga.mcp.client.service.McpClientChatService required a bean of type 'org.springframework.ai.ollama.OllamaChatModel' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.ai.ollama.OllamaChatModel' in your configuration.
+
+2026-02-05T22:05:23.333-07:00  INFO 35549 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 35549 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T22:05:23.333-07:00 DEBUG 35549 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-02-05T22:05:23.334-07:00  INFO 35549 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T22:05:23.641-07:00  INFO 35549 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-02-05T22:05:23.646-07:00  INFO 35549 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05T22:05:23.646-07:00  INFO 35549 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-05T22:05:23.661-07:00  INFO 35549 --- [spring_boot_ai_mcp_client] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05T22:05:23.661-07:00  INFO 35549 --- [spring_boot_ai_mcp_client] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 315 ms
+2026-02-05T22:05:23.706-07:00  WARN 35549 --- [spring_boot_ai_mcp_client] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.ai.ollama.OllamaChatModel' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-05T22:05:23.708-07:00  INFO 35549 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-05T22:05:23.714-07:00  INFO 35549 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-05T22:05:23.719-07:00 ERROR 35549 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.naga.mcp.client.service.McpClientChatService required a bean of type 'org.springframework.ai.ollama.OllamaChatModel' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.ai.ollama.OllamaChatModel' in your configuration.
+
+2026-02-05T22:08:37.382-07:00  INFO 35636 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 35636 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T22:08:37.382-07:00 DEBUG 35636 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v3.4.2, Spring v6.2.2
+2026-02-05T22:08:37.382-07:00  INFO 35636 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T22:08:37.694-07:00  INFO 35636 --- [spring_boot_ai_mcp_client] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8089 (http)
+2026-02-05T22:08:37.699-07:00  INFO 35636 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2026-02-05T22:08:37.699-07:00  INFO 35636 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.34]
+2026-02-05T22:08:37.714-07:00  INFO 35636 --- [spring_boot_ai_mcp_client] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2026-02-05T22:08:37.715-07:00  INFO 35636 --- [spring_boot_ai_mcp_client] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 320 ms
+2026-02-05T22:08:37.761-07:00  WARN 35636 --- [spring_boot_ai_mcp_client] [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'mcpClientChatController': Unsatisfied dependency expressed through field 'chatService': Error creating bean with name 'mcpClientChatService' defined in file [/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes/com/naga/mcp/client/service/McpClientChatService.class]: Unsatisfied dependency expressed through constructor parameter 0: No qualifying bean of type 'org.springframework.ai.ollama.OllamaChatModel' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {}
+2026-02-05T22:08:37.762-07:00  INFO 35636 --- [spring_boot_ai_mcp_client] [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2026-02-05T22:08:37.769-07:00  INFO 35636 --- [spring_boot_ai_mcp_client] [main] .s.b.a.l.ConditionEvaluationReportLogger : 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-02-05T22:08:37.774-07:00 ERROR 35636 --- [spring_boot_ai_mcp_client] [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Parameter 0 of constructor in com.naga.mcp.client.service.McpClientChatService required a bean of type 'org.springframework.ai.ollama.OllamaChatModel' that could not be found.
+
+The injection point has the following annotations:
+	- @org.springframework.beans.factory.annotation.Autowired(required=true)
+
+
+Action:
+
+Consider defining a bean of type 'org.springframework.ai.ollama.OllamaChatModel' in your configuration.
+
+2026-02-05T22:14:13.541-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 35835 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T22:14:13.542-07:00 DEBUG 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v4.0.2, Spring v7.0.3
+2026-02-05T22:14:13.542-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T22:14:13.632-07:00 TRACE 35835 --- [spring_boot_ai_mcp_client] [main] cpToolCallbackAutoConfigurationCondition : Condition McpToolCallbackAutoConfiguration.McpToolCallbackAutoConfigurationCondition on org.springframework.ai.mcp.client.common.autoconfigure.McpToolCallbackAutoConfiguration matched due to AllNestedConditions 2 matched 0 did not; NestedCondition on McpToolCallbackAutoConfiguration.McpToolCallbackAutoConfigurationCondition.ToolCallbackProviderEnabled @ConditionalOnProperty (spring.ai.mcp.client.toolcallback.enabled=true) matched; NestedCondition on McpToolCallbackAutoConfiguration.McpToolCallbackAutoConfigurationCondition.McpAutoConfigEnabled @ConditionalOnProperty (spring.ai.mcp.client.enabled=true) matched
+2026-02-05T22:14:14.090-07:00 DEBUG 35835 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-05T22:14:14.095-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.service.McpClientChatService     : McpClientChatService initialized
+2026-02-05T22:14:14.159-07:00  WARN 35835 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.s.SyncMcpSamplingProvider        : No sampling methods found
+2026-02-05T22:14:14.160-07:00  WARN 35835 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.e.SyncMcpElicitationProvider     : No elicitation methods found
+2026-02-05T22:14:14.194-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8089 (http)
+2026-02-05T22:14:14.200-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Started SpringBootAiMcpClientApplication in 0.786 seconds (process running for 0.911)
+2026-02-05T22:14:14.201-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ========================================
+2026-02-05T22:14:14.201-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ MCP Client started successfully
+2026-02-05T22:14:14.201-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ Chat endpoint: http://localhost:8089/api/chat
+2026-02-05T22:14:14.201-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ Test endpoint: http://localhost:8089/api/test
+2026-02-05T22:14:14.201-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ Health: http://localhost:8089/actuator/health
+2026-02-05T22:14:14.201-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ Connected to MCP Server: http://localhost:8088/mcp/sse
+2026-02-05T22:14:14.201-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ Using Ollama model: mistral
+2026-02-05T22:14:14.201-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ========================================
+2026-02-05T22:14:14.201-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.c.McpClientChatConfig            : MCP Client configuration loaded
+2026-02-05T22:14:14.202-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.c.McpClientChatConfig            : Attempting to connect to MCP Server at: http://localhost:8088/mcp/sse
+2026-02-05T22:14:14.202-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.c.McpClientChatConfig            : Tools from MCP server will be automatically available to the AI model
+2026-02-05T22:18:30.111-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [reactor-http-nio-8] c.n.m.c.service.McpClientChatService     : User: Hello, How are you
+2026-02-05T22:18:32.199-07:00  WARN 35835 --- [spring_boot_ai_mcp_client] [reactor-http-nio-8] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count:1
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:11434/api/chat": block()/blockFirst()/blockLast() are blocking, which is not supported in thread reactor-http-nio-8
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:763) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:615) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:567) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:750) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:896) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body(DefaultRestClient.java:818) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.ai.ollama.api.OllamaApi.chat(OllamaApi.java:115) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$2(OllamaChatModel.java:249) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.core.retry.RetryTemplate.execute(RetryTemplate.java:174) ~[spring-core-7.0.3.jar:7.0.3]
+	at org.springframework.ai.retry.RetryUtils.execute(RetryUtils.java:168) ~[spring-ai-retry-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$1(OllamaChatModel.java:248) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at io.micrometer.observation.Observation.observe(Observation.java:563) ~[micrometer-observation-1.16.2.jar:1.16.2]
+	at org.springframework.ai.ollama.OllamaChatModel.internalCall(OllamaChatModel.java:246) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.OllamaChatModel.call(OllamaChatModel.java:231) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at com.naga.mcp.client.service.McpClientChatService.askAI(McpClientChatService.java:118) ~[classes/:na]
+	at com.naga.mcp.client.service.McpClientChatService.chat(McpClientChatService.java:59) ~[classes/:na]
+	at com.naga.mcp.client.controller.McpClientChatController.chat(McpClientChatController.java:24) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:211) ~[spring-webflux-7.0.3.jar:7.0.3]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:133) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:296) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:480) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:184) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:123) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:75) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:80) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:159) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:109) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:300) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:338) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2093) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:144) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:263) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:419) ~[reactor-netty-core-1.3.2.jar:1.3.2]
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:465) ~[reactor-netty-core-1.3.2.jar:1.3.2]
+	at reactor.netty.http.server.HttpServerOperations.handleLastHttpContent(HttpServerOperations.java:896) ~[reactor-netty-http-1.3.2.jar:1.3.2]
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:805) ~[reactor-netty-http-1.3.2.jar:1.3.2]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115) ~[reactor-netty-core-1.3.2.jar:1.3.2]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:335) ~[reactor-netty-http-1.3.2.jar:1.3.2]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361) ~[netty-codec-base-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325) ~[netty-codec-base-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195) ~[netty-common-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.2.9.Final.jar:4.2.9.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.io.IOException: block()/blockFirst()/blockLast() are blocking, which is not supported in thread reactor-http-nio-8
+	at org.springframework.http.client.ReactorClientHttpRequest.convertException(ReactorClientHttpRequest.java:166) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.http.client.ReactorClientHttpRequest.executeInternal(ReactorClientHttpRequest.java:134) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:609) ~[spring-web-7.0.3.jar:7.0.3]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalStateException: block()/blockFirst()/blockLast() are blocking, which is not supported in thread reactor-http-nio-8
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:87) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.Mono.block(Mono.java:1773) ~[reactor-core-3.8.2.jar:3.8.2]
+	at org.springframework.http.client.ReactorClientHttpRequest.executeInternal(ReactorClientHttpRequest.java:125) ~[spring-web-7.0.3.jar:7.0.3]
+	... 65 common frames omitted
+
+2026-02-05T22:18:42.362-07:00  WARN 35835 --- [spring_boot_ai_mcp_client] [reactor-http-nio-8] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count:2
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:11434/api/chat": block()/blockFirst()/blockLast() are blocking, which is not supported in thread reactor-http-nio-8
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:763) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:615) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:567) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:750) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:896) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body(DefaultRestClient.java:818) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.ai.ollama.api.OllamaApi.chat(OllamaApi.java:115) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$2(OllamaChatModel.java:249) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.core.retry.RetryTemplate.execute(RetryTemplate.java:174) ~[spring-core-7.0.3.jar:7.0.3]
+	at org.springframework.ai.retry.RetryUtils.execute(RetryUtils.java:168) ~[spring-ai-retry-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$1(OllamaChatModel.java:248) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at io.micrometer.observation.Observation.observe(Observation.java:563) ~[micrometer-observation-1.16.2.jar:1.16.2]
+	at org.springframework.ai.ollama.OllamaChatModel.internalCall(OllamaChatModel.java:246) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.OllamaChatModel.call(OllamaChatModel.java:231) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at com.naga.mcp.client.service.McpClientChatService.askAI(McpClientChatService.java:118) ~[classes/:na]
+	at com.naga.mcp.client.service.McpClientChatService.chat(McpClientChatService.java:59) ~[classes/:na]
+	at com.naga.mcp.client.controller.McpClientChatController.chat(McpClientChatController.java:24) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:211) ~[spring-webflux-7.0.3.jar:7.0.3]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:133) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:296) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:480) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:184) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:123) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:75) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:80) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:159) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:109) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:300) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:338) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2093) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:144) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:263) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:419) ~[reactor-netty-core-1.3.2.jar:1.3.2]
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:465) ~[reactor-netty-core-1.3.2.jar:1.3.2]
+	at reactor.netty.http.server.HttpServerOperations.handleLastHttpContent(HttpServerOperations.java:896) ~[reactor-netty-http-1.3.2.jar:1.3.2]
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:805) ~[reactor-netty-http-1.3.2.jar:1.3.2]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115) ~[reactor-netty-core-1.3.2.jar:1.3.2]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:335) ~[reactor-netty-http-1.3.2.jar:1.3.2]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361) ~[netty-codec-base-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325) ~[netty-codec-base-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195) ~[netty-common-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.2.9.Final.jar:4.2.9.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.io.IOException: block()/blockFirst()/blockLast() are blocking, which is not supported in thread reactor-http-nio-8
+	at org.springframework.http.client.ReactorClientHttpRequest.convertException(ReactorClientHttpRequest.java:166) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.http.client.ReactorClientHttpRequest.executeInternal(ReactorClientHttpRequest.java:134) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:609) ~[spring-web-7.0.3.jar:7.0.3]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalStateException: block()/blockFirst()/blockLast() are blocking, which is not supported in thread reactor-http-nio-8
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:87) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.Mono.block(Mono.java:1773) ~[reactor-core-3.8.2.jar:3.8.2]
+	at org.springframework.http.client.ReactorClientHttpRequest.executeInternal(ReactorClientHttpRequest.java:125) ~[spring-web-7.0.3.jar:7.0.3]
+	... 65 common frames omitted
+
+2026-02-05T22:19:32.401-07:00  WARN 35835 --- [spring_boot_ai_mcp_client] [reactor-http-nio-8] o.s.a.r.a.SpringAiRetryAutoConfiguration : Retry error. Retry count:3
+
+org.springframework.web.client.ResourceAccessException: I/O error on POST request for "http://localhost:11434/api/chat": block()/blockFirst()/blockLast() are blocking, which is not supported in thread reactor-http-nio-8
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.createResourceAccessException(DefaultRestClient.java:763) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:615) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchange(DefaultRestClient.java:567) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.RestClient$RequestHeadersSpec.exchange(RestClient.java:750) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.executeAndExtract(DefaultRestClient.java:896) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultResponseSpec.body(DefaultRestClient.java:818) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.ai.ollama.api.OllamaApi.chat(OllamaApi.java:115) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$2(OllamaChatModel.java:249) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.core.retry.RetryTemplate.execute(RetryTemplate.java:174) ~[spring-core-7.0.3.jar:7.0.3]
+	at org.springframework.ai.retry.RetryUtils.execute(RetryUtils.java:168) ~[spring-ai-retry-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.OllamaChatModel.lambda$internalCall$1(OllamaChatModel.java:248) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at io.micrometer.observation.Observation.observe(Observation.java:563) ~[micrometer-observation-1.16.2.jar:1.16.2]
+	at org.springframework.ai.ollama.OllamaChatModel.internalCall(OllamaChatModel.java:246) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at org.springframework.ai.ollama.OllamaChatModel.call(OllamaChatModel.java:231) ~[spring-ai-ollama-2.0.0-M2.jar:2.0.0-M2]
+	at com.naga.mcp.client.service.McpClientChatService.askAI(McpClientChatService.java:118) ~[classes/:na]
+	at com.naga.mcp.client.service.McpClientChatService.chat(McpClientChatService.java:59) ~[classes/:na]
+	at com.naga.mcp.client.controller.McpClientChatController.chat(McpClientChatController.java:24) ~[classes/:na]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[na:na]
+	at org.springframework.web.reactive.result.method.InvocableHandlerMethod.lambda$invoke$0(InvocableHandlerMethod.java:211) ~[spring-webflux-7.0.3.jar:7.0.3]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:133) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoZip$ZipCoordinator.signal(MonoZip.java:296) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoZip$ZipInner.onNext(MonoZip.java:480) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:184) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxDefaultIfEmpty$DefaultIfEmptySubscriber.onNext(FluxDefaultIfEmpty.java:123) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:75) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:80) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:159) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxContextWrite$ContextWriteSubscriber.onNext(FluxContextWrite.java:109) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxMapFuseable$MapFuseableConditionalSubscriber.onNext(FluxMapFuseable.java:300) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:338) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.Operators$BaseFluxToMonoOperator.completePossiblyEmpty(Operators.java:2093) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoCollect$CollectSubscriber.onComplete(MonoCollect.java:144) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxPeek$PeekSubscriber.onComplete(FluxPeek.java:263) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:144) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:419) ~[reactor-netty-core-1.3.2.jar:1.3.2]
+	at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:465) ~[reactor-netty-core-1.3.2.jar:1.3.2]
+	at reactor.netty.http.server.HttpServerOperations.handleLastHttpContent(HttpServerOperations.java:896) ~[reactor-netty-http-1.3.2.jar:1.3.2]
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:805) ~[reactor-netty-http-1.3.2.jar:1.3.2]
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:115) ~[reactor-netty-core-1.3.2.jar:1.3.2]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:356) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:335) ~[reactor-netty-http-1.3.2.jar:1.3.2]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:434) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:361) ~[netty-codec-base-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:325) ~[netty-codec-base-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:249) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:354) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1429) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:918) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:172) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.AbstractNioChannel$AbstractNioUnsafe.handle(AbstractNioChannel.java:445) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler$DefaultNioRegistration.handle(NioIoHandler.java:388) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.processSelectedKey(NioIoHandler.java:596) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeysOptimized(NioIoHandler.java:571) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.processSelectedKeys(NioIoHandler.java:512) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.nio.NioIoHandler.run(NioIoHandler.java:484) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.SingleThreadIoEventLoop.runIo(SingleThreadIoEventLoop.java:225) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.channel.SingleThreadIoEventLoop.run(SingleThreadIoEventLoop.java:196) ~[netty-transport-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.util.concurrent.SingleThreadEventExecutor$5.run(SingleThreadEventExecutor.java:1195) ~[netty-common-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74) ~[netty-common-4.2.9.Final.jar:4.2.9.Final]
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30) ~[netty-common-4.2.9.Final.jar:4.2.9.Final]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+Caused by: java.io.IOException: block()/blockFirst()/blockLast() are blocking, which is not supported in thread reactor-http-nio-8
+	at org.springframework.http.client.ReactorClientHttpRequest.convertException(ReactorClientHttpRequest.java:166) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.http.client.ReactorClientHttpRequest.executeInternal(ReactorClientHttpRequest.java:134) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.http.client.AbstractStreamingClientHttpRequest.executeInternal(AbstractStreamingClientHttpRequest.java:87) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.http.client.AbstractClientHttpRequest.execute(AbstractClientHttpRequest.java:80) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.web.client.DefaultRestClient$DefaultRequestBodyUriSpec.exchangeInternal(DefaultRestClient.java:609) ~[spring-web-7.0.3.jar:7.0.3]
+	... 62 common frames omitted
+Caused by: java.lang.IllegalStateException: block()/blockFirst()/blockLast() are blocking, which is not supported in thread reactor-http-nio-8
+	at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:87) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.Mono.block(Mono.java:1773) ~[reactor-core-3.8.2.jar:3.8.2]
+	at org.springframework.http.client.ReactorClientHttpRequest.executeInternal(ReactorClientHttpRequest.java:125) ~[spring-web-7.0.3.jar:7.0.3]
+	... 65 common frames omitted
+
+2026-02-05T22:21:30.800-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [SpringApplicationShutdownHook] o.s.boot.reactor.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-05T22:22:00.812-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Shutdown phase 2147482623 ends with 1 bean still running after timeout of 30000ms: [webServerGracefulShutdown]
+2026-02-05T22:22:00.814-07:00  INFO 35835 --- [spring_boot_ai_mcp_client] [netty-shutdown] o.s.boot.reactor.netty.GracefulShutdown  : Graceful shutdown aborted with one or more requests still active
+2026-02-05T22:22:15.830-07:00  WARN 35835 --- [spring_boot_ai_mcp_client] [SpringApplicationShutdownHook] o.s.c.support.DefaultLifecycleProcessor  : Failed to stop bean 'reactorResourceFactory'
+
+java.lang.IllegalStateException: LoopResources couldn't be disposed within 15000ms
+	at reactor.netty.resources.DefaultLoopResources.lambda$disposeLater$0(DefaultLoopResources.java:136) ~[reactor-netty-core-1.3.2.jar:1.3.2]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:46) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4569) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoWhen$WhenCoordinator.request(MonoWhen.java:228) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoWhen$WhenInner.onSubscribe(MonoWhen.java:401) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoWhen.subscribe(MonoWhen.java:101) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4569) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoWhen$WhenCoordinator.request(MonoWhen.java:228) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.BlockingSingleSubscriber.onSubscribe(BlockingSingleSubscriber.java:55) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoWhen.subscribe(MonoWhen.java:101) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:54) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4569) ~[reactor-core-3.8.2.jar:3.8.2]
+	at reactor.core.publisher.Mono.block(Mono.java:1772) ~[reactor-core-3.8.2.jar:3.8.2]
+	at org.springframework.http.client.ReactorResourceFactory.stop(ReactorResourceFactory.java:296) ~[spring-web-7.0.3.jar:7.0.3]
+	at org.springframework.context.SmartLifecycle.stop(SmartLifecycle.java:143) ~[spring-context-7.0.3.jar:7.0.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.doStop(DefaultLifecycleProcessor.java:480) ~[spring-context-7.0.3.jar:7.0.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor$LifecycleGroup.stop(DefaultLifecycleProcessor.java:645) ~[spring-context-7.0.3.jar:7.0.3]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.context.support.DefaultLifecycleProcessor.stopBeans(DefaultLifecycleProcessor.java:448) ~[spring-context-7.0.3.jar:7.0.3]
+	at org.springframework.context.support.DefaultLifecycleProcessor.onClose(DefaultLifecycleProcessor.java:337) ~[spring-context-7.0.3.jar:7.0.3]
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1178) ~[spring-context-7.0.3.jar:7.0.3]
+	at org.springframework.boot.web.server.reactive.context.ReactiveWebServerApplicationContext.doClose(ReactiveWebServerApplicationContext.java:158) ~[spring-boot-web-server-4.0.2.jar:4.0.2]
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:1132) ~[spring-context-7.0.3.jar:7.0.3]
+	at org.springframework.boot.SpringApplicationShutdownHook.closeAndWait(SpringApplicationShutdownHook.java:147) ~[spring-boot-4.0.2.jar:4.0.2]
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75) ~[na:na]
+	at org.springframework.boot.SpringApplicationShutdownHook.run(SpringApplicationShutdownHook.java:116) ~[spring-boot-4.0.2.jar:4.0.2]
+	at java.base/java.lang.Thread.run(Thread.java:1583) ~[na:na]
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:104) ~[reactor-core-3.8.2.jar:3.8.2]
+		at reactor.core.publisher.Mono.block(Mono.java:1773) ~[reactor-core-3.8.2.jar:3.8.2]
+		... 14 common frames omitted
+
+2026-02-05T22:23:06.350-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Starting SpringBootAiMcpClientApplication using Java 21.0.8 with PID 36080 (/Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client/target/classes started by nagabrahmachary_bachala in /Users/nagabrahmachary_bachala/Java_Practise/spring_boot_ai_mcp_client)
+2026-02-05T22:23:06.351-07:00 DEBUG 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Running with Spring Boot v4.0.2, Spring v7.0.3
+2026-02-05T22:23:06.352-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : No active profile set, falling back to 1 default profile: "default"
+2026-02-05T22:23:06.440-07:00 TRACE 36080 --- [spring_boot_ai_mcp_client] [main] cpToolCallbackAutoConfigurationCondition : Condition McpToolCallbackAutoConfiguration.McpToolCallbackAutoConfigurationCondition on org.springframework.ai.mcp.client.common.autoconfigure.McpToolCallbackAutoConfiguration matched due to AllNestedConditions 2 matched 0 did not; NestedCondition on McpToolCallbackAutoConfiguration.McpToolCallbackAutoConfigurationCondition.ToolCallbackProviderEnabled @ConditionalOnProperty (spring.ai.mcp.client.toolcallback.enabled=true) matched; NestedCondition on McpToolCallbackAutoConfiguration.McpToolCallbackAutoConfigurationCondition.McpAutoConfigEnabled @ConditionalOnProperty (spring.ai.mcp.client.enabled=true) matched
+2026-02-05T22:23:06.889-07:00 DEBUG 36080 --- [spring_boot_ai_mcp_client] [main] o.s.a.m.t.a.ToolCallingAutoConfiguration : Cannot load class: org.springframework.security.oauth2.client.ClientAuthorizationException
+2026-02-05T22:23:06.893-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.service.McpClientChatService     : McpClientChatService initialized
+2026-02-05T22:23:06.958-07:00  WARN 36080 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.s.SyncMcpSamplingProvider        : No sampling methods found
+2026-02-05T22:23:06.959-07:00  WARN 36080 --- [spring_boot_ai_mcp_client] [main] o.s.m.p.e.SyncMcpElicitationProvider     : No elicitation methods found
+2026-02-05T22:23:06.993-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] o.s.boot.reactor.netty.NettyWebServer    : Netty started on port 8089 (http)
+2026-02-05T22:23:06.999-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : Started SpringBootAiMcpClientApplication in 0.775 seconds (process running for 0.894)
+2026-02-05T22:23:07.000-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ========================================
+2026-02-05T22:23:07.000-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ MCP Client started successfully
+2026-02-05T22:23:07.000-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ Chat endpoint: http://localhost:8089/api/chat
+2026-02-05T22:23:07.000-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ Test endpoint: http://localhost:8089/api/test
+2026-02-05T22:23:07.000-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ Health: http://localhost:8089/actuator/health
+2026-02-05T22:23:07.000-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ Connected to MCP Server: http://localhost:8088/mcp/sse
+2026-02-05T22:23:07.001-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ✓ Using Ollama model: mistral
+2026-02-05T22:23:07.001-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.SpringBootAiMcpClientApplication : ========================================
+2026-02-05T22:23:07.001-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.c.McpClientChatConfig            : MCP Client configuration loaded
+2026-02-05T22:23:07.001-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.c.McpClientChatConfig            : Attempting to connect to MCP Server at: http://localhost:8088/mcp/sse
+2026-02-05T22:23:07.002-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [main] c.n.m.c.c.McpClientChatConfig            : Tools from MCP server will be automatically available to the AI model
+2026-02-05T22:23:14.386-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [task-2] c.n.m.c.service.McpClientChatService     : User: Hello, How are you
+2026-02-05T22:23:35.891-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [task-2] c.n.m.c.service.McpClientChatService     : AI:  I'm an AI and don't have feelings, but I'm here to help you! How can I assist you today?
+
+In general, I am always ready to answer questions, provide information, or engage in friendly conversation. If you need assistance with a specific task or have any queries, feel free to ask!
+2026-02-05T22:24:18.143-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [task-4] c.n.m.c.service.McpClientChatService     : User: Do you know if there are any open prs in my repos
+2026-02-05T22:24:39.253-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [task-4] c.n.m.c.service.McpClientChatService     : AI:  Based on the provided data, there is one open pull request (PR) in the repository `nagachary/java-must-read`. The PR number is 25 and it was created by "nagachary" on February 2nd, 2026 at 2:45 AM. The title of the PR is "added sample classes", and you can view more details about it at this URL: https://github.com/nagachary/java-must-read/pull/25.
+2026-02-05T22:24:57.314-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [SpringApplicationShutdownHook] o.s.boot.reactor.netty.GracefulShutdown  : Commencing graceful shutdown. Waiting for active requests to complete
+2026-02-05T22:24:57.318-07:00  INFO 36080 --- [spring_boot_ai_mcp_client] [netty-shutdown] o.s.boot.reactor.netty.GracefulShutdown  : Graceful shutdown complete
