@@ -21,12 +21,12 @@ public class SpringBootAiMcpClientApplication {
 	@EventListener(ApplicationReadyEvent.class)
 	public void onApplicationReady() {
 		logger.info("========================================");
-		logger.info("✓ MCP Client started successfully");
-		logger.info("✓ Chat endpoint: http://localhost:8089/api/chat");
-		logger.info("✓ Test endpoint: http://localhost:8089/api/test");
-		logger.info("✓ Health: http://localhost:8089/actuator/health");
-		logger.info("✓ Connected to MCP Server: http://localhost:8088/mcp/sse");
-		logger.info("✓ Using Ollama model: mistral");
+		logger.info(" MCP Client started successfully");
+		logger.info(" Chat endpoint: http://localhost:8089/api/chat");
+		logger.info(" Test endpoint: http://localhost:8089/api/test");
+		logger.info(" Health: http://localhost:8089/actuator/health");
+		logger.info(" Connected to MCP Server: http://localhost:8088/mcp/sse");
+		logger.info(" Using Ollama model: mistral");
 		logger.info("========================================");
 	}
 }

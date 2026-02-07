@@ -8,6 +8,7 @@ import org.springframework.ai.chat.model.ChatResponse;
 import org.springframework.ai.chat.prompt.Prompt;
 import org.springframework.ai.ollama.OllamaChatModel;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
 
@@ -23,13 +24,12 @@ public class McpClientChatService {
     private final ObjectMapper objectMapper;
 
     @Autowired
-    public McpClientChatService(OllamaChatModel chatModel) {
+    public McpClientChatService(OllamaChatModel chatModel,
+                                @Qualifier("MCP_AUTH_WEBCLIENT") WebClient webClient) {
         this.chatModel = chatModel;
-        this.webClient = WebClient.builder()
-                .baseUrl("http://localhost:8088")
-                .build();
+        this.webClient = webClient;
         this.objectMapper = new ObjectMapper();
-        logger.info("McpClientChatService initialized");
+        logger.info("McpClientChatService initialized with secured WebClient");
     }
 
     /**

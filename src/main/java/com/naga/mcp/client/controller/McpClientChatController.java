@@ -20,6 +20,7 @@ public class McpClientChatController {
 
     @PostMapping("/chat")
     public Map<String, String> chat(@RequestBody Map<String, String> request) {
+        logger.info("chat method : ");
         String message = request.get("message");
         String response = chatService.chat(message);
         return Map.of("response", response);
@@ -27,6 +28,7 @@ public class McpClientChatController {
 
     @GetMapping("/chat")
     public Map<String, String> chatGet(@RequestParam String message) {
+        logger.info("chatGet method : ");
         String response = chatService.chat(message);
         return Map.of("response", response);
     }
