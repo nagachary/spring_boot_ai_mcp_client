@@ -1,0 +1,14 @@
+version: '3.8'
+services:
+  mcp-client:
+    build: .
+    container_name: mcp-client
+    ports:
+      - "8089:8089"
+    environment:
+      SPRING_AI_MCP_CLIENT_SSE_URL: ${SPRING_AI_MCP_CLIENT_SSE_URL}
+      MCP_SERVER_AUTH_API_KEY: ${MCP_SERVER_AUTH_API_KEY}
+      MCP_SERVER_AUTH_TOKEN_ENDPOINT: ${MCP_SERVER_AUTH_TOKEN_ENDPOINT}
+      SPRING_AI_OLLAMA_BASE_URL: ${SPRING_AI_OLLAMA_BASE_URL}
+      SPRING_AI_OLLAMA_CHAT_OPTIONS_MODEL: ${SPRING_AI_OLLAMA_CHAT_OPTIONS_MODEL}
+    restart: unless-stopped
